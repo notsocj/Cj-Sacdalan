@@ -554,12 +554,12 @@ video {
   display: none;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mb-8 {
@@ -574,68 +574,41 @@ video {
   display: grid;
 }
 
-.size-16 {
-  width: 4rem;
-  height: 4rem;
-}
-
-.size-14 {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.size-1 {
-  width: 0.25rem;
-  height: 0.25rem;
-}
-
 .size-12 {
   width: 3rem;
   height: 3rem;
 }
 
-.h-24 {
-  height: 6rem;
-}
-
-.h-10 {
+.size-10 {
+  width: 2.5rem;
   height: 2.5rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-11 {
+.size-11 {
+  width: 2.75rem;
   height: 2.75rem;
 }
 
-.w-24 {
-  width: 6rem;
+.size-9 {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.size-8 {
+  width: 2rem;
+  height: 2rem;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-11 {
-  width: 2.75rem;
+.h-screen {
+  height: 100vh;
 }
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -662,14 +635,9 @@ video {
   border-radius: 0.5rem;
 }
 
-.bg-purple-700 {
+.bg-gray-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
-}
-
-.bg-stone-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(28 25 23 / var(--tw-bg-opacity, 1));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-700 {
@@ -677,39 +645,45 @@ video {
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
 }
 
-.bg-slate-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
-}
-
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
-.bg-purple-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'\/path-to-your-image\.jpg\'\)\] {
+  background-image: url('/path-to-your-image.jpg');
 }
 
-.bg-purple-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 33 168 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
 }
 
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'Pictures\/\'\)\] {
+  background-image: url('Pictures/');
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'Pictures\/Home\'\)\] {
+  background-image: url('Pictures/Home');
 }
 
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'Pictures\/HomePage\'\)\] {
+  background-image: url('Pictures/HomePage');
+}
+
+.bg-\[url\(\'\/Pictures\/HomePage\.jpg\'\)\] {
+  background-image: url('/Pictures/HomePage.jpg');
+}
+
+.bg-\[url\(\'Pictures\/HomePage\.jpg\'\)\] {
+  background-image: url('Pictures/HomePage.jpg');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-6 {
@@ -726,12 +700,28 @@ video {
   padding-bottom: 4rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
 .text-center {
   text-align: center;
 }
 
 .font-mono {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif;
 }
 
 .text-2xl {
@@ -754,6 +744,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -762,14 +757,13 @@ video {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .text-purple-100 {
   --tw-text-opacity: 1;
   color: rgb(243 232 255 / var(--tw-text-opacity, 1));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .text-purple-200 {
@@ -777,17 +771,9 @@ video {
   color: rgb(233 213 255 / var(--tw-text-opacity, 1));
 }
 
-.decoration-dotted {
-  text-decoration-style: dotted;
-}
-
-.decoration-dashed {
-  text-decoration-style: dashed;
-}
-
-.hover\:text-purple-300:hover {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(216 180 254 / var(--tw-text-opacity, 1));
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-white:hover {

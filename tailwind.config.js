@@ -2,8 +2,11 @@
 module.exports = {
   content: ["./public/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Use 'Roboto' as a font name
+    },
+    },
   },
   plugins: [],
 }
-

@@ -1,7 +1,6 @@
 {
-  "name": "html",
+  "name": "portfolio-git",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch"
@@ -9,7 +8,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.4.17"
-  }
+  "description": ""
 }
